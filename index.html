@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600&display=swap");
+    </style>
+    <title>Manoj Portfolio</title>
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav class="des-nav">
+      <div class="logo">Manoj</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="hamburger-nav">
+      <div class="logo">Manoj</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="profile">
+      <div class="profile-img">
+        <img src="assets/profile-pic.png" alt="Manoj Profile Pic" />
+      </div>
+      <div class="profile-content">
+        <p class="profile-content-p1">Hello I'm</p>
+        <h1 class="title">Manoj</h1>
+        <p class="profile-content-p2">Frontend Developer</p>
+      
+      <div class="profile-btn">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assets/resume-example.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Me
+        </button>
+      </div>
+      <div class="profile-social">
+        <img
+          src="./assets/linkedin.png"
+          alt="linkedin"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/manoj-lingabathula-976404184/'"
+        />
+        <img
+        src="./assets/github.png"
+        alt="My GitHub Profile"
+        class="icon"
+        onclick="location.href='https://github.com/'"
+      />
+      </div>
+    </div>
+    </section>
+
+    
+
+  </body>
+  <script src="script.js"></script>
+</html>
